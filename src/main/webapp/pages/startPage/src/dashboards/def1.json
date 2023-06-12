@@ -1,0 +1,50 @@
+{
+  "visualizations": {
+    "viz_FVX3ZVDa": {
+      "type": "viz.pie",
+      "options": {},
+      "dataSources": {
+        "primary": "ds_DqxbnM7D"
+      }
+    }
+  },
+  "dataSources": {
+    "ds_DqxbnM7D": {
+      "type": "ds.search",
+      "options": {
+        "query": "index=_internal sourcetype=splunkd_ui_access status!=200 | stats count by status"
+      },
+      "name": "count_by_status"
+    }
+  },
+  "defaults": {
+    "dataSources": {
+      "ds.search": {
+        "options": {
+          "queryParameters": {
+            "latest": "$latest$",
+            "earliest": "$earliest$"
+          }
+        }
+      }
+    }
+  },
+  "layout": {
+    "type": "grid",
+    "options": {},
+    "structure": [
+      {
+        "item": "viz_FVX3ZVDa",
+        "type": "block",
+        "position": {
+          "x": 0,
+          "y": 0,
+          "w": 1200,
+          "h": 400
+        }
+      }
+    ]
+  },
+  "description": "",
+  "title": "UI Access by HTTP Status"
+}

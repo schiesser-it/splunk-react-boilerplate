@@ -1,0 +1,4 @@
+<nav>
+    <view name="startPage" default="true" />
+    <view name="search" />
+</nav>

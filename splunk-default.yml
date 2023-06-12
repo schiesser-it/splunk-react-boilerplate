@@ -1,0 +1,17 @@
+---
+splunk:
+  hec:
+    enable: False
+
+  conf:
+    - key: web
+      value:
+        directory: /opt/splunk/etc/system/local
+        content:
+          settings:
+            minify_js: False
+            minify_css: False
+            js_no_cache: True
+            cacheEntriesLimit: 0
+            cacheBytesLimit: 0
+            enableWebDebug: True

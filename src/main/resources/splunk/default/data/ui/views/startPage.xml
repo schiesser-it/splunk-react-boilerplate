@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<view template="React-MUI-App:/templates/startPage.html" type="html">
+    <label>React-MUI-App</label>
+</view>
