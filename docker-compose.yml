@@ -5,7 +5,7 @@ services:
     image: splunk/splunk:9.0
     platform: linux/amd64
     volumes:
-      - ${LOCAL_WORKSPACE_FOLDER:-./}/stage:/opt/splunk/etc/apps/React-MUI-App
+      - ${LOCAL_WORKSPACE_FOLDER:-./}/.:/opt/splunk/etc/apps/React-MUI-App
       - ${LOCAL_WORKSPACE_FOLDER:-./}/splunk-default.yml:/tmp/defaults/default.yml
     environment:
       SPLUNK_PASSWORD: splunkdev

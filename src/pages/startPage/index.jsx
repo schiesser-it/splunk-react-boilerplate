@@ -4,7 +4,7 @@ import { createRoot } from "react-dom/client";
 import { createStaticURL } from "@splunk/splunk-utils/url";
 import $script from "scriptjs";
 
-import App from "./src/App";
+import App from "./App";
 
 function getLayoutApi(callback) {
   const url = createStaticURL("build/api/layout.js");

@@ -1,3 +1,4 @@
 .DS_Store
 stage/
 node_modules/
+appserver/static/
