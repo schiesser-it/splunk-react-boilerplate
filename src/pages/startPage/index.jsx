@@ -1,13 +1,13 @@
-import React from "react";
-import { createRoot } from "react-dom/client";
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
-import { createStaticURL } from "@splunk/splunk-utils/url";
-import $script from "scriptjs";
+import { createStaticURL } from '@splunk/splunk-utils/url';
+import $script from 'scriptjs';
 
-import App from "./App";
+import App from './App';
 
 function getLayoutApi(callback) {
-  const url = createStaticURL("build/api/layout.js");
+  const url = createStaticURL('build/api/layout.js');
 
   if (window.requirejs) {
     window.requirejs([url], callback);
@@ -26,7 +26,7 @@ getLayoutApi((layoutApi) => {
   if (layoutApi) {
     containerEl = layoutApi.create().getContainerElement();
   } else {
-    containerEl = document.createElement("div");
+    containerEl = document.createElement('div');
     document.body.appendChild(containerEl);
   }
 
@@ -34,6 +34,6 @@ getLayoutApi((layoutApi) => {
   root.render(
     <React.StrictMode>
       <App />
-    </React.StrictMode>
+    </React.StrictMode>,
   );
 });

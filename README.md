@@ -36,3 +36,11 @@ Optionally, start the repository in a [Devcontainer](https://code.visualstudio.c
 5.  Open Splunk in your browser
 
         http://localhost:8000/en-US/app/React-MUI-App/startPage
+
+### Other Useful Scripts
+
+- `yarn format` — Runs Prettier for all files.
+- `yarn lint` — Runs ESLint check for all files.
+- `yarn lint:fix` — Runs ESLint check for all files and fixes all fixable errors.
+- `yarn test` — Runs Jest tests.
+- `yarn test:watch` — Runs Jest tests in watch mode.
