@@ -1,5 +1,5 @@
 module.exports = {
-  extends: '@splunk/eslint-config/browser-prettier',
+  extends: ['react-app'],
   rules: {
     'react/no-array-index-key': 'off',
     'new-cap': 'off',

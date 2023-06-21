@@ -1,3 +1,3 @@
 module.exports = {
-  presets: ['@splunk/babel-preset'],
+  presets: ['@babel/preset-env', '@babel/preset-react'],
 };

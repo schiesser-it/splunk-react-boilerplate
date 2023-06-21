@@ -31,7 +31,6 @@ const Dashboard = ({ dateRange }) => {
           preset={EnterpriseViewOnlyPreset}
           tokenBinding={appTokenBindings}
         />
-        <div data-testid="sample">Hello</div>
       </DashboardContextProvider>
     </SplunkThemeProvider>
   );

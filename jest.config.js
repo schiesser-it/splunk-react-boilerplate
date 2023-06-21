@@ -1,3 +1,3 @@
 module.exports = {
-    testMatch: ['**/*.unit.[jt]s?(x)'],
+  testMatch: ['**/*.unit.[jt]s?(x)'],
 };
