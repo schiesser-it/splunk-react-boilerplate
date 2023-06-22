@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['react-app'],
+  extends: ['react-app', 'prettier'],
   rules: {
     'react/no-array-index-key': 'off',
     'new-cap': 'off',
