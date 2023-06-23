@@ -21,7 +21,7 @@ The reasons for using MUI over Splunk UI are:
         $ git clone https://github.com/schiesser-it/splunk-react-mui-boilerplate
         $ cd splunk-react-mui-boilerplate
 
-Optionally, start the repository in a [Devcontainer](https://code.visualstudio.com/docs/devcontainers/containers). The one provided includes the necessary Node version 16.
+Optionally, start the repository in a [Devcontainer](https://code.visualstudio.com/docs/devcontainers/containers). The one provided includes the necessary Node version 18.
 
 2.  Install dependencies
 
