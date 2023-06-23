@@ -10,7 +10,9 @@
     "lint:fix": "eslint src --ext \".js, .jsx\" --fix",
     "format": "git ls-files | grep -E \"\\.(jsx?|css)$\" | xargs prettier --write",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "tar": "tar czf app.tar.gz appserver default && mv app.tar.gz",
+    "package": "yarn run build && yarn run tar"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
