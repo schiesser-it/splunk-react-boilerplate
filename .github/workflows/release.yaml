@@ -28,11 +28,11 @@ jobs:
         run: yarn install
 
       - name: Build App
-        run: yarn package /tmp/React-MUI-App.tgz
+        run: yarn package /tmp/React-App.tgz
 
       - name: Upload Apps to Github Releases
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            /tmp/React-MUI-App.tgz
+            /tmp/React-App.tgz
