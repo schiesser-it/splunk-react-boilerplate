@@ -15,8 +15,8 @@ const themeToVariant = {
 const Dashboard = ({ dateRange }) => {
   const appTokenBindings = {
     default: {
-      earliest: dateRange[0].unix(),
-      latest: dateRange[1].unix(),
+      earliest: dateRange[0],
+      latest: dateRange[1],
     },
   };
 
