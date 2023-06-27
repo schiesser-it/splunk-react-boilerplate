@@ -22,7 +22,7 @@ The simplest way to try out this boilerplate is to test it out locally. Here are
 Fork the repo to your Github account, then run the following command to clone the repo:
 
 ```
-git clone git@github.com:[YOUR_GITHUB_ACCOUNT_NAME]/splunk-react-mui-boilerplate.git
+git clone git@github.com:[YOUR_GITHUB_ACCOUNT_NAME]/splunk-react-boilerplate.git
 ```
 
 Optionally, start the repository in a [Devcontainer](https://code.visualstudio.com/docs/devcontainers/containers). The one provided includes the necessary Node version 18, otherwise, [make sure that Node 18 is installed](https://nodejs.org/en/download).
@@ -30,7 +30,7 @@ Optionally, start the repository in a [Devcontainer](https://code.visualstudio.c
 ### 2. Install dependencies
 
 ```
-cd splunk-react-mui-boilerplate
+cd splunk-react-boilerplate
 yarn install
 ```
 
@@ -50,14 +50,14 @@ docker-compose up
 
 c. **Open Splunk in your browser**
 
-http://localhost:8000/en-US/app/React-MUI-App/startPage
+http://localhost:8000/en-US/app/React-App/startPage
 
 ### 4. Build the Splunk app
 
 You can use `yarn package` to build the app in a folder of your choice:
 
 ```
-yarn package /tmp/React-MUI-App.tgz
+yarn package /tmp/React-App.tgz
 ```
 
 If you push a tag, [a Github action](.github/workflows/release.yaml) will automatically build the app and upload it to [Github Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).
