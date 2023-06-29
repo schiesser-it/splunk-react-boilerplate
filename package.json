@@ -23,8 +23,8 @@
     "@splunk/splunk-utils": "^2.3.4",
     "@splunk/themes": "^0.16.1",
     "@splunk/visualization-context": "^24.7.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "scriptjs": "^2.5.8",
     "styled-components": "^5.1.1"
   },

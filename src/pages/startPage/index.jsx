@@ -1,5 +1,5 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import { render } from 'react-dom';
 
 import { createStaticURL } from '@splunk/splunk-utils/url';
 import $script from 'scriptjs';
@@ -30,10 +30,5 @@ getLayoutApi((layoutApi) => {
     document.body.appendChild(containerEl);
   }
 
-  const root = createRoot(containerEl);
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-  );
+  render(<App />, containerEl);
 });

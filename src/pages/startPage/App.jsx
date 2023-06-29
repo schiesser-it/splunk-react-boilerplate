@@ -14,6 +14,7 @@ export default function App() {
   return (
     <div data-testid="root">
       <TimeRangeDropdown
+        appearance="flat"
         presets={[
           { label: 'Today', earliest: '@d', latest: 'now' },
           { label: 'Last 15 minutes', earliest: '-15m', latest: 'now' },
@@ -24,6 +25,7 @@ export default function App() {
         earliest={dateRange[0]}
         latest={dateRange[1]}
         labelMaxChars={Infinity}
+        style={{ margin: '20px' }}
       />
       <Dashboard dateRange={dateRange} />
     </div>
