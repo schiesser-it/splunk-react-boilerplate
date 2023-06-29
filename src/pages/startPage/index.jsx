@@ -30,5 +30,10 @@ getLayoutApi((layoutApi) => {
     document.body.appendChild(containerEl);
   }
 
-  render(<App />, containerEl);
+  render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    containerEl,
+  );
 });
