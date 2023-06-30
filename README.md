@@ -1,8 +1,8 @@
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-# Splunk React MUI Boilerplate
+# Splunk React Boilerplate
 
-Welcome to this boilerplate to quickly start [React](https://react.dev/) applications with [Splunk](https://www.splunk.com/). Use [Material-UI (MUI)](https://mui.com/) for the UI and
+Welcome to this boilerplate to quickly start [React](https://react.dev/) applications with [Splunk](https://www.splunk.com/). Use [Splunk UI](https://splunkui.splunk.com/) for the UI and
 add no-code Splunk Dashboards to your app.
 
 <img width="1305" alt="Screen Shot 2023-06-23" src="./static/screenshot.png"/>
@@ -10,7 +10,7 @@ add no-code Splunk Dashboards to your app.
 ## Overview
 
 - 🚀 [Quickstart](#quickstart)
-- 🧐 [Notes](#notes)
+- 🧐 [Advantages to @splunk/create](#advantages-to-splunkcreate)
 - 💻 [Contribute to this repo](#how-to-contribute-to-this-repo)
 
 ## Quickstart
@@ -62,18 +62,35 @@ yarn package /tmp/React-App.tgz
 
 If you push a tag, [a Github action](.github/workflows/release.yaml) will automatically build the app and upload it to [Github Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases).
 
-## Notes
+## Advantages to @splunk/create
 
-This boilerplate is not using the [Splunk UI framework](https://splunkui.splunk.com/home), but instead uses [Material-UI (MUI)](https://mui.com/).
+This starter kit provides an alternative to the [`@splunk/create`](https://www.npmjs.com/package/@splunk/create) package. It has the following advantages:
 
-Nevertheless, this example contains a [simple Splunk dashboard](src/main/webapp/pages/app/src/dashboards/def1.json) that has been generated with the Splunk Dashboard Studio to show how to integrate dashboards into an MUI application.
+- 📦 Simplified Package Structure
 
-The reasons for using MUI over Splunk UI are:
+  - The root folder contains the Splunk app. Simply `git clone` into your `$SPLUNK_HOME/etc/apps` folder, run the [build](#4-build-the-splunk-app), and you're ready to go.
+  - This is a single package repo without the overhead of [lerna](https://lerna.js.org/).
 
-1.  Material-UI (MUI) is an incredibly popular set of React components that follow Google's Material Design guidelines. It is used by many companies and has a large community.
-2.  MUI provides excellent customization capabilities. You can customize the design of your app by creating a theme and applying it to your components. In fact a lot of companies already have an existing MUI theme that they might want to use in their Splunk apps.
+- 🛠️ Easier Development
 
-> Note: We're using [@splunk/dashboard](https://splunkui.splunk.com/Packages/dashboard-docs/) version 24, as 25 doesn't work with React 18.
+  - The package comes with a [`docker-compose.yml`](./docker-compose.yml) to start Splunk locally.
+  - It also contains a [`devcontainer.json`](./.devcontainer/devcontainer.json) to start the app in a [Devcontainer](https://code.visualstudio.com/docs/devcontainers/containers).
+
+- 🚀 Streamlined Deployment
+
+  - The package includes a [Github action](./.github/workflows/release.yaml) to build and upload the app to Github Releases.
+
+- 🖥️ Practical Code Templates
+
+  - The package contains a [Splunk dashboard](./src/pages/startPage/dashboards/def1.json) (generated with the Splunk Dashboard Studio) to demonstrate the integration into a SplunkUI application.
+  - You can modify [`index.jsx`](./src/pages/startPage/index.jsx), for example, to render the app without the Splunk toolbar.
+
+- 🔧 Latest Dependencies
+  - Webpack 5
+  - Eslint 8
+  - Prettier 2
+  - Jest 25
+  - Babel 7
 
 ## How to contribute to this repo
 
